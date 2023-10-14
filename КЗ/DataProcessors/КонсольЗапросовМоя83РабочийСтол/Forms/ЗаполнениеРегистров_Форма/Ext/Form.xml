@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ФормаГруппаОчистка" id="27">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Очистка/в режиме конфигуратора</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа очистка</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаОчисткаРасширеннаяПодсказка" id="28"/>
+				<ChildItems>
+					<Button name="ФормаОчиститьРегистрыКонфигуратор" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОчиститьРегистрыКонфигуратор</CommandName>
+						<ExtendedTooltip name="ФормаОчиститьРегистрыКонфигураторРасширеннаяПодсказка" id="30"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<Page name="ГруппаИзмененийЗаписей" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменений записей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа изменений записей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаИзмененийЗаписейРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<CommandBar name="ГруппаКоманднаяПанельИзменениеЗаписей" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель изменение записей</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель изменение записей</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаКоманднаяПанельИзменениеЗаписейРасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<Button name="ФормаЗаписать" id="1">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Записать</CommandName>
+									<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="2"/>
+								</Button>
+								<Button name="ПрочитатьЗаписи" id="63">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПрочитатьЗаписи</CommandName>
+									<ExtendedTooltip name="ПрочитатьЗаписиРасширеннаяПодсказка" id="64"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="Группа1" id="9">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="10"/>
+							<ChildItems>
+								<InputField name="рфИмяРегистра" id="3">
+									<DataPath>рфИмяРегистра</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="рфИмяРегистраКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="рфИмяРегистраРасширеннаяПодсказка" id="5"/>
+									<Events>
+										<Event name="OnChange">рфИмяРегистраПриИзменении</Event>
+										<Event name="AutoComplete">рфИмяРегистраАвтоПодбор</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="рфЗамещать" id="11">
+									<DataPath>рфЗамещать</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="рфЗамещатьКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="рфЗамещатьРасширеннаяПодсказка" id="13"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="рфОтбор" id="6">
+							<DataPath>рфОтбор</DataPath>
+							<ContextMenu name="рфОтборКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="рфОтборРасширеннаяПодсказка" id="8"/>
+						</InputField>
+						<Table name="рфОтборУстановка" id="65">
+							<Representation>List</Representation>
+							<HeightInTableRows>2</HeightInTableRows>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<MaxRowsCount>2</MaxRowsCount>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>рфОтборУстановка</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="рфОтборУстановкаКонтекстноеМеню" id="66"/>
+							<AutoCommandBar name="рфОтборУстановкаКоманднаяПанель" id="67"/>
+							<ExtendedTooltip name="рфОтборУстановкаРасширеннаяПодсказка" id="68"/>
+							<SearchStringAddition name="рфОтборУстановкаСтрокаПоиска" id="69">
+								<AdditionSource>
+									<Item>рфОтборУстановка</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфОтборУстановкаСтрокаПоискаКонтекстноеМеню" id="70"/>
+								<ExtendedTooltip name="рфОтборУстановкаСтрокаПоискаРасширеннаяПодсказка" id="71"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="рфОтборУстановкаСостояниеПросмотра" id="72">
+								<AdditionSource>
+									<Item>рфОтборУстановка</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфОтборУстановкаСостояниеПросмотраКонтекстноеМеню" id="73"/>
+								<ExtendedTooltip name="рфОтборУстановкаСостояниеПросмотраРасширеннаяПодсказка" id="74"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="рфОтборУстановкаУправлениеПоиском" id="75">
+								<AdditionSource>
+									<Item>рфОтборУстановка</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="рфОтборУстановкаУправлениеПоискомКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="рфОтборУстановкаУправлениеПоискомРасширеннаяПодсказка" id="77"/>
+							</SearchControlAddition>
+						</Table>
+						<Table name="рфДанные" id="14">
+							<Representation>List</Representation>
+							<MaxRowsCount>2</MaxRowsCount>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>рфДанные</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="рфДанныеКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="рфДанныеКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="рфДанныеРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="рфДанныеСтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>рфДанные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДанныеСтрокаПоискаКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="рфДанныеСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="рфДанныеСостояниеПросмотра" id="21">
+								<AdditionSource>
+									<Item>рфДанные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДанныеСостояниеПросмотраКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="рфДанныеСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="рфДанныеУправлениеПоиском" id="24">
+								<AdditionSource>
+									<Item>рфДанные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДанныеУправлениеПоискомКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="рфДанныеУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+							</SearchControlAddition>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКоличествоСтрокВРегистрах" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество строк в регистрах</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа количество строк в регистрах</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКоличествоСтрокВРегистрахРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<Button name="рфДанныеОбновитьКолСтрок" id="53">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбновитьКолСтрок</CommandName>
+							<ExtendedTooltip name="рфДанныеОбновитьКолСтрокРасширеннаяПодсказка" id="54"/>
+						</Button>
+						<Table name="рфКоличествоСтрокРегистров" id="31">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>рфКоличествоСтрокРегистров</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="рфКоличествоСтрокРегистровКонтекстноеМеню" id="32"/>
+							<AutoCommandBar name="рфКоличествоСтрокРегистровКоманднаяПанель" id="33">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="рфКоличествоСтрокРегистровРасширеннаяПодсказка" id="34"/>
+							<SearchStringAddition name="рфКоличествоСтрокРегистровСтрокаПоиска" id="35">
+								<AdditionSource>
+									<Item>рфКоличествоСтрокРегистров</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфКоличествоСтрокРегистровСтрокаПоискаКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="рфКоличествоСтрокРегистровСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="рфКоличествоСтрокРегистровСостояниеПросмотра" id="38">
+								<AdditionSource>
+									<Item>рфКоличествоСтрокРегистров</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфКоличествоСтрокРегистровСостояниеПросмотраКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="рфКоличествоСтрокРегистровСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="рфКоличествоСтрокРегистровУправлениеПоиском" id="41">
+								<AdditionSource>
+									<Item>рфКоличествоСтрокРегистров</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="рфКоличествоСтрокРегистровУправлениеПоискомКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="рфКоличествоСтрокРегистровУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="рфКоличествоСтрокРегистровИмяРегистра" id="44">
+									<DataPath>рфКоличествоСтрокРегистров.ИмяРегистра</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="рфКоличествоСтрокРегистровИмяРегистраКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="рфКоличествоСтрокРегистровИмяРегистраРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="рфКоличествоСтрокРегистровПредставление" id="47">
+									<DataPath>рфКоличествоСтрокРегистров.Представление</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="рфКоличествоСтрокРегистровПредставлениеКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="рфКоличествоСтрокРегистровПредставлениеРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="рфКоличествоСтрокРегистровКоличество" id="50">
+									<DataPath>рфКоличествоСтрокРегистров.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="рфКоличествоСтрокРегистровКоличествоКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="рфКоличествоСтрокРегистровКоличествоРасширеннаяПодсказка" id="52"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонсольЗапросовМоя83РабочийСтол</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="рфДанные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф данные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="рфИмяРегистра" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя регистра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="рфЗамещать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замещать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="рфОтбор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор набора записей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="рфКоличествоСтрокРегистров" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф количество строк регистров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяРегистра" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя регистра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="рфОтборУстановка" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф отбор установка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Записать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Записать</Action>
+		</Command>
+		<Command name="ОчиститьРегистрыКонфигуратор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить регистры конфигуратор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить регистры конфигуратор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьРегистрыКонфигуратор</Action>
+		</Command>
+		<Command name="ОбновитьКолСтрок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить кол строк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьКолСтрок</Action>
+		</Command>
+		<Command name="ПрочитатьЗаписи" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать записи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать записи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьЗаписи</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="рфУзел" id="1">
+			<DataPath>рфУзел</DataPath>
+			<ContextMenu name="рфУзелКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="рфУзелРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">рфУзелПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаЛевоПраво1" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лево право1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лево право1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЛевоПраво1РасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛево1" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛево1РасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<Table name="рфМетаСостав" id="10">
+							<Representation>Tree</Representation>
+							<Width>80</Width>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<HorizontalStretch>false</HorizontalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>рфМетаСостав</DataPath>
+							<ContextMenu name="рфМетаСоставКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="рфМетаСоставКоманднаяПанель" id="12"/>
+							<ExtendedTooltip name="рфМетаСоставРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="рфМетаСоставСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>рфМетаСостав</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфМетаСоставСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="рфМетаСоставСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="рфМетаСоставСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>рфМетаСостав</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфМетаСоставСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="рфМетаСоставСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="рфМетаСоставУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>рфМетаСостав</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="рфМетаСоставУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="рфМетаСоставУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">рфМетаСоставПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="рфМетаСоставПолноеИмя" id="23">
+									<DataPath>рфМетаСостав.ПолноеИмя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>35</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>35</MaxWidth>
+									<ContextMenu name="рфМетаСоставПолноеИмяКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="рфМетаСоставПолноеИмяРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="рфМетаСоставАвторегистрация" id="26">
+									<DataPath>рфМетаСостав.Авторегистрация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>14</Width>
+									<MaxWidth>6</MaxWidth>
+									<ContextMenu name="рфМетаСоставАвторегистрацияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="рфМетаСоставАвторегистрацияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="рфМетаСоставВсего" id="29">
+									<DataPath>рфМетаСостав.Всего</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<MaxWidth>10</MaxWidth>
+									<ContextMenu name="рфМетаСоставВсегоКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="рфМетаСоставВсегоРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="рфМетаСоставВыгружено" id="32">
+									<DataPath>рфМетаСостав.Выгружено</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
+									<ContextMenu name="рфМетаСоставВыгруженоКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="рфМетаСоставВыгруженоРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="рфМетаСоставНеВыгружено" id="35">
+									<DataPath>рфМетаСостав.НеВыгружено</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>13</Width>
+									<MaxWidth>10</MaxWidth>
+									<ContextMenu name="рфМетаСоставНеВыгруженоКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="рфМетаСоставНеВыгруженоРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<InputField name="рфМетаСоставПоле1" id="51">
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="рфМетаСоставПоле1КонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="рфМетаСоставПоле1РасширеннаяПодсказка" id="53"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраво1" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПраво1РасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<Table name="рфОтправляемыеОбъекты" id="38">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>рфОтправляемыеОбъекты</DataPath>
+							<RowPictureDataPath>~рфОтправляемыеОбъекты.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="рфОтправляемыеОбъектыКонтекстноеМеню" id="39"/>
+							<AutoCommandBar name="рфОтправляемыеОбъектыКоманднаяПанель" id="40"/>
+							<ExtendedTooltip name="рфОтправляемыеОбъектыРасширеннаяПодсказка" id="41"/>
+							<SearchStringAddition name="рфОтправляемыеОбъектыСтрокаПоиска" id="42">
+								<AdditionSource>
+									<Item>рфОтправляемыеОбъекты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфОтправляемыеОбъектыСтрокаПоискаКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="рфОтправляемыеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="44"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="рфОтправляемыеОбъектыСостояниеПросмотра" id="45">
+								<AdditionSource>
+									<Item>рфОтправляемыеОбъекты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфОтправляемыеОбъектыСостояниеПросмотраКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="рфОтправляемыеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="47"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="рфОтправляемыеОбъектыУправлениеПоиском" id="48">
+								<AdditionSource>
+									<Item>рфОтправляемыеОбъекты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="рфОтправляемыеОбъектыУправлениеПоискомКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="рфОтправляемыеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="50"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">рфОтправляемыеОбъектыВыбор</Event>
+							</Events>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонсольЗапросовМоя83РабочийСтол</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="рфУзел" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Узел</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="рфМетаСостав" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф мета состав</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ПолноеИмя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Авторегистрация" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авторегистрация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Fixed</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Всего" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выгружено" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НеВыгружено" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не выгружено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="рфОтправляемыеОбъекты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф отправляемые объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	NULL КАК Поле1</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

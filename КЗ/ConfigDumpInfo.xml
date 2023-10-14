@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.15">
+	<ConfigVersions>
+		<Metadata name="Configuration.Конфигурация" id="a8cada4c-52d7-4b77-a3fe-33a89739049b" configVersion="a374f3150f3af5499c96da6276c4aca800000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол" id="0b4cc92f-ee16-43de-ae1c-1926b59ebf4d" configVersion="5341ac42ca1321449ac0a6f99d9367e000000000">
+			<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Attribute.ПутьКФормам" id="5d7efd07-abee-4dcf-ac00-6bb118f58d1c"/>
+			<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Attribute.РабочийСтол" id="9f3aa1c1-6622-4578-b441-6d03d9f19473"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ЗаполнениеРегистров_ПоНабору" id="784c01ac-bec5-415b-a840-ad6adad63d18" configVersion="cb2910e68da0274d88c9fc3c7e051b5000000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ЗаполнениеРегистров_ПоНабору.Form" id="784c01ac-bec5-415b-a840-ad6adad63d18.0" configVersion="49293ce727864b4fb53fd24641aa99a300000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ЗаполнениеРегистров_ПоОтбору" id="b4129f3a-6da1-409a-b4ab-7d864f8b30e6" configVersion="5a210ae182076f4db2c5cdb487abab2f00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ЗаполнениеРегистров_ПоОтбору.Form" id="b4129f3a-6da1-409a-b4ab-7d864f8b30e6.0" configVersion="2d374bef7ca68743a7aa5aba24fa446500000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ЗаполнениеРегистров_Форма" id="51de011f-2bf1-44f7-bd40-5ae16baba419" configVersion="60115debe10e0b42be3fe7b0e5d7110b00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ЗаполнениеРегистров_Форма.Form" id="51de011f-2bf1-44f7-bd40-5ae16baba419.0" configVersion="0ac39beeadf99f4097a9cbb55c20b8ef00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.НастройкаОткрытияФормПриЗапуске" id="7be01f29-779a-479c-a9c9-b3fb05d4aeae" configVersion="f234879bd6713d46a767cd7793e9724d00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.НастройкаОткрытияФормПриЗапуске.Form" id="7be01f29-779a-479c-a9c9-b3fb05d4aeae.0" configVersion="5612c6561b50da49b8cd28914e7682a800000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ПланыОбменаРегистрация" id="6863ffd8-2f5f-4ef3-8715-f37028f0980f" configVersion="1ed8d3278ad04d4dbd7723f34d375e5400000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ПланыОбменаРегистрация.Form" id="6863ffd8-2f5f-4ef3-8715-f37028f0980f.0" configVersion="43bd432fa876e144ad78a7b8697d5d8a00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.РИБ" id="320d3ee8-4cec-42dd-85c3-d7c4950bd6b9" configVersion="53b4c87df57c784db0bccf7c6d976a5700000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.РИБ.Form" id="320d3ee8-4cec-42dd-85c3-d7c4950bd6b9.0" configVersion="a01966dff5f2c94eb4fc8ed24091bddc00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.РазборЗапроса" id="f713be82-99e3-4c29-bdde-b6342d256dc1" configVersion="11f7e66d5f9cfb439c468e1065d5384e00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.РазборЗапроса.Form" id="f713be82-99e3-4c29-bdde-b6342d256dc1.0" configVersion="8da593f7be53ba41abc0b4737afe1e0100000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.РегламентныеИФоновыеЗадания" id="2164781a-1a9f-42ce-89fb-96834732a068" configVersion="4d3947b0bde18144a021c00b7fd0eecf00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.РегламентныеИФоновыеЗадания.Form" id="2164781a-1a9f-42ce-89fb-96834732a068.0" configVersion="4f5bf6375646824cb6b41f6d8aa1c2c300000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.УдалениеОбъектов" id="37969268-2a21-407c-9f3a-ababe3e73818" configVersion="1027297a51862f4b87fd91ca727efda300000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.УдалениеОбъектов.Form" id="37969268-2a21-407c-9f3a-ababe3e73818.0" configVersion="b9c363c9de6e91418e678e17c52d3e7b00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.Форма" id="48a5686d-8df2-4205-8a8c-fd85aab99af7" configVersion="9e466f47ec68404f862cc6edd3a04b7b00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.Форма.Form" id="48a5686d-8df2-4205-8a8c-fd85aab99af7.0" configVersion="6f519265f3d00e41b17efc376980ce1500000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ФормаВыбораТипа" id="0cd52e62-f9a2-433e-85e9-ca3874441c2d" configVersion="74efe2e61932844e89e14487ff29341400000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ФормаВыбораТипа.Form" id="0cd52e62-f9a2-433e-85e9-ca3874441c2d.0" configVersion="e47fdd7660b646449135ec9dd4cf871400000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ФормаКода" id="a010665b-cf93-4d26-b1a8-03980f286f0d" configVersion="208ab325c9e541489608beb1c15ed0ea00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ФормаКода.Form" id="a010665b-cf93-4d26-b1a8-03980f286f0d.0" configVersion="5458e5cdfa9d554fb927b727dd845a2900000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ФормаТаблицы" id="0adc8b7c-40d2-45f2-a030-3008284a29a0" configVersion="0ac0d5c1b026f34488423ad0b9e4f3a900000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Form.ФормаТаблицы.Form" id="0adc8b7c-40d2-45f2-a030-3008284a29a0.0" configVersion="2a570139c781e043a2665ecd9d217c6f00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.ObjectModule" id="0b4cc92f-ee16-43de-ae1c-1926b59ebf4d.0" configVersion="1796b61f1223b94b90dcc0b89d2a6c1e00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Template.АнализЗапроса" id="a875e1dd-faef-4747-abd3-b9058a3efc8f" configVersion="6dec139e7749f342b911c5b2f81800f700000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Template.АнализЗапроса.Template" id="a875e1dd-faef-4747-abd3-b9058a3efc8f.0" configVersion="b4f4a7cfdf4b29489214d6ced8235aba00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Template.ВерсионированиеОбработки" id="41aa41fa-f947-4046-877f-5ed137405e9d" configVersion="fbacda44c507ce4294e45c6fae37c35c00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Template.ВерсионированиеОбработки.Template" id="41aa41fa-f947-4046-877f-5ed137405e9d.0" configVersion="3404cc2f0512584e9a148a74bc19068d00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Template.Макет" id="87352d3f-9ad9-4f2b-a93e-132b9083e3b8" configVersion="32da0e46b76b25499032a0b81aaa1f5500000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Template.Макет.Template" id="87352d3f-9ad9-4f2b-a93e-132b9083e3b8.0" configVersion="abad39dfbb98c3418d10415c1543d5cb00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Template.СКД_ВыводТипов" id="9f35e4a9-23bf-452a-95ed-b92a00d859c8" configVersion="fab3e741034aa243ad099c1698dc75aa00000000"/>
+		<Metadata name="DataProcessor.КонсольЗапросовМоя83РабочийСтол.Template.СКД_ВыводТипов.Template" id="9f35e4a9-23bf-452a-95ed-b92a00d859c8.0" configVersion="dffcdf4793eab345a6b4fe25482c808700000000"/>
+		<Metadata name="Language.Русский" id="80657c5d-1e70-4d72-afbd-7bba427a84a9" configVersion="fc08229f9d058544adfb626f898fa23f00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<Page name="СтраницаВыборОбъектов" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор объектов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выбор объектов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВыборОбъектовРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<CommandBar name="Группа2" id="48">
+							<CommandSource>Form</CommandSource>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="49"/>
+							<ChildItems>
+								<Button name="ФормаУдалитьВыделенныеСтроки" id="38">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ДляУдаленияВыделенныеСтроки</CommandName>
+									<BackColor>#FFCC00</BackColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedTooltip name="ФормаУдалитьВыделенныеСтрокиРасширеннаяПодсказка" id="39"/>
+								</Button>
+								<Button name="ФормаУдалитьВидимыеВТаблице" id="34">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ДляУдаленияВидимыеВТаблице</CommandName>
+									<BackColor>#FFCC00</BackColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedTooltip name="ФормаУдалитьВидимыеВТаблицеРасширеннаяПодсказка" id="35"/>
+								</Button>
+								<Button name="ФормаУдалитьВсеИзТаблицы" id="36">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ДляУдаленияВсеИзТаблицы</CommandName>
+									<BackColor>#FFCC00</BackColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedTooltip name="ФормаУдалитьВсеИзТаблицыРасширеннаяПодсказка" id="37"/>
+								</Button>
+								<Button name="ФормарфОбновить" id="32">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.рфОбновить</CommandName>
+									<ExtendedTooltip name="ФормарфОбновитьРасширеннаяПодсказка" id="33"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<InputField name="рфТипОбъекта" id="1">
+							<DataPath>рфТипОбъекта</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="рфТипОбъектаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="рфТипОбъектаРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="StartChoice">рфТипОбъектаНачалоВыбора</Event>
+								<Event name="ChoiceProcessing">рфТипОбъектаОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<Table name="рфДинСписокОтбор" id="4">
+							<Representation>Tree</Representation>
+							<Autofill>true</Autofill>
+							<Width>60</Width>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>рфДинСписок.Filter</DataPath>
+							<ViewMode>All</ViewMode>
+							<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+							<ContextMenu name="рфДинСписокОтборКонтекстноеМеню" id="5"/>
+							<AutoCommandBar name="рфДинСписокОтборКоманднаяПанель" id="6"/>
+							<ExtendedTooltip name="рфДинСписокОтборРасширеннаяПодсказка" id="7"/>
+							<SearchStringAddition name="рфДинСписокОтборСтрокаПоиска" id="8">
+								<AdditionSource>
+									<Item>рфДинСписокОтбор</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДинСписокОтборСтрокаПоискаКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="рфДинСписокОтборСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="рфДинСписокОтборСостояниеПросмотра" id="11">
+								<AdditionSource>
+									<Item>рфДинСписокОтбор</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДинСписокОтборСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="рфДинСписокОтборСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="рфДинСписокОтборУправлениеПоиском" id="14">
+								<AdditionSource>
+									<Item>рфДинСписокОтбор</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДинСписокОтборУправлениеПоискомКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="рфДинСписокОтборУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+							</SearchControlAddition>
+						</Table>
+						<Table name="рфДинСписок" id="17">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>рфДинСписок</DataPath>
+							<RowPictureDataPath>~рфДинСписок.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="рфДинСписокКонтекстноеМеню" id="18"/>
+							<AutoCommandBar name="рфДинСписокКоманднаяПанель" id="19"/>
+							<ExtendedTooltip name="рфДинСписокРасширеннаяПодсказка" id="20"/>
+							<SearchStringAddition name="рфДинСписокСтрокаПоиска" id="21">
+								<AdditionSource>
+									<Item>рфДинСписок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДинСписокСтрокаПоискаКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="рфДинСписокСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="рфДинСписокСостояниеПросмотра" id="24">
+								<AdditionSource>
+									<Item>рфДинСписок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДинСписокСостояниеПросмотраКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="рфДинСписокСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="рфДинСписокУправлениеПоиском" id="27">
+								<AdditionSource>
+									<Item>рфДинСписок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="рфДинСписокУправлениеПоискомКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="рфДинСписокУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+							</SearchControlAddition>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаУдаление" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удаление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница удаление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаУдалениеРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="104">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="105"/>
+							<ChildItems>
+								<Button name="СамоУдалениеУдалитВТранзакции" id="66">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СамоУдалениеУдалитВТранзакции</CommandName>
+									<TextColor>#FF0000</TextColor>
+									<BackColor>#000000</BackColor>
+									<Font ref="style:NormalTextFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedTooltip name="СамоУдалениеУдалитВТранзакцииРасширеннаяПодсказка" id="67"/>
+								</Button>
+								<Button name="СамоЗаписатьОбъекты" id="102">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СамоЗаписатьОбъекты</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>#99CC00</BackColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedTooltip name="СамоЗаписатьОбъектыРасширеннаяПодсказка" id="103"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="100">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="101"/>
+							<ChildItems>
+								<Table name="рфУдалениеСписок" id="68">
+									<TitleLocation>Top</TitleLocation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>рфУдалениеСписок</DataPath>
+									<RowPictureDataPath>~рфУдалениеСписок.DefaultPicture</RowPictureDataPath>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доп данные по объектам для удаления</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FF0000</TitleTextColor>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="рфУдалениеСписокКонтекстноеМеню" id="69"/>
+									<AutoCommandBar name="рфУдалениеСписокКоманднаяПанель" id="70"/>
+									<ExtendedTooltip name="рфУдалениеСписокРасширеннаяПодсказка" id="71"/>
+									<SearchStringAddition name="рфУдалениеСписокСтрокаПоиска" id="72">
+										<AdditionSource>
+											<Item>рфУдалениеСписок</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="рфУдалениеСписокСтрокаПоискаКонтекстноеМеню" id="73"/>
+										<ExtendedTooltip name="рфУдалениеСписокСтрокаПоискаРасширеннаяПодсказка" id="74"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="рфУдалениеСписокСостояниеПросмотра" id="75">
+										<AdditionSource>
+											<Item>рфУдалениеСписок</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="рфУдалениеСписокСостояниеПросмотраКонтекстноеМеню" id="76"/>
+										<ExtendedTooltip name="рфУдалениеСписокСостояниеПросмотраРасширеннаяПодсказка" id="77"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="рфУдалениеСписокУправлениеПоиском" id="78">
+										<AdditionSource>
+											<Item>рфУдалениеСписок</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="рфУдалениеСписокУправлениеПоискомКонтекстноеМеню" id="79"/>
+										<ExtendedTooltip name="рфУдалениеСписокУправлениеПоискомРасширеннаяПодсказка" id="80"/>
+									</SearchControlAddition>
+								</Table>
+								<Table name="рфОбъектыДляУдаления" id="84">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>рфОбъектыДляУдаления</DataPath>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сами объекты которые удалятся</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#FF0000</TitleTextColor>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="рфОбъектыДляУдаленияКонтекстноеМеню" id="85"/>
+									<AutoCommandBar name="рфОбъектыДляУдаленияКоманднаяПанель" id="86"/>
+									<ExtendedTooltip name="рфОбъектыДляУдаленияРасширеннаяПодсказка" id="87"/>
+									<SearchStringAddition name="рфОбъектыДляУдаленияСтрокаПоиска" id="88">
+										<AdditionSource>
+											<Item>рфОбъектыДляУдаления</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="рфОбъектыДляУдаленияСтрокаПоискаКонтекстноеМеню" id="89"/>
+										<ExtendedTooltip name="рфОбъектыДляУдаленияСтрокаПоискаРасширеннаяПодсказка" id="90"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="рфОбъектыДляУдаленияСостояниеПросмотра" id="91">
+										<AdditionSource>
+											<Item>рфОбъектыДляУдаления</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="рфОбъектыДляУдаленияСостояниеПросмотраКонтекстноеМеню" id="92"/>
+										<ExtendedTooltip name="рфОбъектыДляУдаленияСостояниеПросмотраРасширеннаяПодсказка" id="93"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="рфОбъектыДляУдаленияУправлениеПоиском" id="94">
+										<AdditionSource>
+											<Item>рфОбъектыДляУдаления</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="рфОбъектыДляУдаленияУправлениеПоискомКонтекстноеМеню" id="95"/>
+										<ExtendedTooltip name="рфОбъектыДляУдаленияУправлениеПоискомРасширеннаяПодсказка" id="96"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="рфОбъектыДляУдаленияСсылка" id="97">
+											<DataPath>рфОбъектыДляУдаления.Ссылка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<OpenButton>true</OpenButton>
+											<ContextMenu name="рфОбъектыДляУдаленияСсылкаКонтекстноеМеню" id="98"/>
+											<ExtendedTooltip name="рфОбъектыДляУдаленияСсылкаРасширеннаяПодсказка" id="99"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонсольЗапросовМоя83РабочийСтол</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="рфТипОбъекта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип объекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="рфДинСписок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф дин список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	NULL КАК Ссылка</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="рфОбъектыДляУдаления" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф объекты для удаления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="рфУдалениеСписок" id="5">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	NULL КАК Ссылка</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДляУдаленияВсеИзТаблицы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для удаления все из таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для удаления все из таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДляУдаленияВсеИзТаблицы</Action>
+		</Command>
+		<Command name="рфОбновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>рфОбновить</Action>
+		</Command>
+		<Command name="ДляУдаленияВидимыеВТаблице" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для удаления видимые в таблице</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для удаления видимые в таблице</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДляУдаленияВидимыеВТаблице</Action>
+		</Command>
+		<Command name="ДляУдаленияВыделенныеСтроки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для удаления выделенные строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для удаления выделенные строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДляУдаленияВыделенныеСтроки</Action>
+		</Command>
+		<Command name="СамоУдалениеУдалитВТранзакции" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Само удаление удалит в транзакции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Само удаление удалит в транзакции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СамоУдалениеУдалитВТранзакции</Action>
+		</Command>
+		<Command name="СамоЗаписатьОбъекты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Само записать объекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Само записать объекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СамоЗаписатьОбъекты</Action>
+		</Command>
+	</Commands>
+</Form>

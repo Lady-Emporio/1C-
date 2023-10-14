@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыборРегистра" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выбор регистра</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выбор регистра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыборРегистраРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="рфИмяТаблицы" id="6">
+					<DataPath>рфИмяТаблицы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="рфИмяТаблицыКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="рфИмяТаблицыРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<InputField name="рфИмяРегистра" id="3">
+					<DataPath>рфИмяРегистра</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="рфИмяРегистраКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="рфИмяРегистраРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="AutoComplete">рфИмяРегистраАвтоПодбор</Event>
+						<Event name="StartChoice">рфИмяРегистраНачалоВыбора</Event>
+						<Event name="ChoiceProcessing">рфИмяРегистраОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="рфПерезаписывать" id="45">
+					<DataPath>рфПерезаписывать</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="рфПерезаписыватьКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="рфПерезаписыватьРасширеннаяПодсказка" id="47"/>
+				</CheckBoxField>
+				<CheckBoxField name="рфВыбратьПервые100" id="50">
+					<DataPath>рфВыбратьПервые1000</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="рфВыбратьПервые100КонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="рфВыбратьПервые100РасширеннаяПодсказка" id="52"/>
+				</CheckBoxField>
+				<LabelDecoration name="ДекорацияСтрокВТаблице" id="71">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строк в таблице: </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияСтрокВТаблицеКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ДекорацияСтрокВТаблицеРасширеннаяПодсказка" id="73"/>
+				</LabelDecoration>
+				<InputField name="рфВыводитьНаборов" id="74">
+					<DataPath>рфВыводитьНаборов</DataPath>
+					<ContextMenu name="рфВыводитьНаборовКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="рфВыводитьНаборовРасширеннаяПодсказка" id="76"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтборДинСписка" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор дин списка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор дин списка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборДинСпискаРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<Table name="рфДинСписокОтборОтбор" id="11">
+					<Representation>Tree</Representation>
+					<Autofill>true</Autofill>
+					<Width>60</Width>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<HeightInTableRows>3</HeightInTableRows>
+					<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
+					<AutoMaxRowsCount>false</AutoMaxRowsCount>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<VerticalStretch>false</VerticalStretch>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>рфДинСписокОтбор.Filter</DataPath>
+					<ViewMode>All</ViewMode>
+					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+					<ContextMenu name="рфДинСписокОтборОтборКонтекстноеМеню" id="12"/>
+					<AutoCommandBar name="рфДинСписокОтборОтборКоманднаяПанель" id="13"/>
+					<ExtendedTooltip name="рфДинСписокОтборОтборРасширеннаяПодсказка" id="14"/>
+					<SearchStringAddition name="рфДинСписокОтборОтборСтрокаПоиска" id="15">
+						<AdditionSource>
+							<Item>рфДинСписокОтборОтбор</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="рфДинСписокОтборОтборСтрокаПоискаКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="рфДинСписокОтборОтборСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="рфДинСписокОтборОтборСостояниеПросмотра" id="18">
+						<AdditionSource>
+							<Item>рфДинСписокОтборОтбор</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="рфДинСписокОтборОтборСостояниеПросмотраКонтекстноеМеню" id="19"/>
+						<ExtendedTooltip name="рфДинСписокОтборОтборСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="рфДинСписокОтборОтборУправлениеПоиском" id="21">
+						<AdditionSource>
+							<Item>рфДинСписокОтборОтбор</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="рфДинСписокОтборОтборУправлениеПоискомКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="рфДинСписокОтборОтборУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+					</SearchControlAddition>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДанныеВТз" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данные в тз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данные в тз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДанныеВТзРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДанныеВТЗ_КомандаяПанель" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данные ВТЗ командая панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данные ВТЗ командая панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДанныеВТЗ_КомандаяПанельРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<Button name="ПрочитатьПоОтборуВТаблицу" id="39">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПрочитатьПоОтборуВТаблицу</CommandName>
+							<ExtendedTooltip name="ПрочитатьПоОтборуВТаблицуРасширеннаяПодсказка" id="40"/>
+						</Button>
+						<Button name="ЗаписатьИзТаблицыОтбора" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.НачатьЗаписьИзТаблицыОтбора</CommandName>
+							<BackColor>#FF9900</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedTooltip name="ЗаписатьИзТаблицыОтбораРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСгенерированныеНаборыЗаписей" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сгенерированные наборы записей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сгенерированные наборы записей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСгенерированныеНаборыЗаписейРасширеннаяПодсказка" id="49"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗаписьБезОтбора" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа запись без отбора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа запись без отбора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаписьБезОтбораРасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияЗаписьНапрямую" id="68">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записать напрямую:</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияЗаписьНапрямуюКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ДекорацияЗаписьНапрямуюРасширеннаяПодсказка" id="70"/>
+				</LabelDecoration>
+				<Table name="рфНаборБезОтбора" id="55">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>рфНаборБезОтбора</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="рфНаборБезОтбораКонтекстноеМеню" id="56"/>
+					<AutoCommandBar name="рфНаборБезОтбораКоманднаяПанель" id="57"/>
+					<ExtendedTooltip name="рфНаборБезОтбораРасширеннаяПодсказка" id="58"/>
+					<SearchStringAddition name="рфНаборБезОтбораСтрокаПоиска" id="59">
+						<AdditionSource>
+							<Item>рфНаборБезОтбора</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="рфНаборБезОтбораСтрокаПоискаКонтекстноеМеню" id="60"/>
+						<ExtendedTooltip name="рфНаборБезОтбораСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="рфНаборБезОтбораСостояниеПросмотра" id="62">
+						<AdditionSource>
+							<Item>рфНаборБезОтбора</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="рфНаборБезОтбораСостояниеПросмотраКонтекстноеМеню" id="63"/>
+						<ExtendedTooltip name="рфНаборБезОтбораСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="рфНаборБезОтбораУправлениеПоиском" id="65">
+						<AdditionSource>
+							<Item>рфНаборБезОтбора</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="рфНаборБезОтбораУправлениеПоискомКонтекстноеМеню" id="66"/>
+						<ExtendedTooltip name="рфНаборБезОтбораУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+					</SearchControlAddition>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонсольЗапросовМоя83РабочийСтол</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="рфИмяРегистра" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя регистра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="рфИмяТаблицы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="рфДинСписокОтбор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф дин список отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	NULL КАК Ссылка</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="рфПерезаписывать" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаписывать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="рфНаборыЗаписейРодительскаяТаблица" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф наборы записей родительская таблица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="рфДочернийНаборЗаписей" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рф дочерний набор записей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<AdditionalColumns table="рфНаборыЗаписейРодительскаяТаблица.рфДочернийНаборЗаписей"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="рфВыбратьПервые1000" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать первые1000</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="рфНаборБезОтбора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рф набор без отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="рфВыводитьНаборов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить наборов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьПоОтборуВТаблицу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать по отбору в таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать по отбору в таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьПоОтборуВТаблицу</Action>
+		</Command>
+		<Command name="НачатьЗаписьИзТаблицыОтбора" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать запись из таблицы отбора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьЗаписьИзТаблицыОтбора</Action>
+		</Command>
+	</Commands>
+</Form>
