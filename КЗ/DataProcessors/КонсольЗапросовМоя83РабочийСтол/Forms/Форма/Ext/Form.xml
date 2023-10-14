@@ -159,6 +159,11 @@
 				<CommandName>Form.Command.УдалениеОбъектов</CommandName>
 				<ExtendedTooltip name="ФормаУдалениеОбъектовРасширеннаяПодсказка" id="95"/>
 			</Button>
+			<Button name="ФормаКнопкаВыбораБазы" id="152">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаВыбораБазы</CommandName>
+				<ExtendedTooltip name="ФормаКнопкаВыбораБазыРасширеннаяПодсказка" id="153"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -337,13 +342,20 @@
 							</ChildItems>
 						</Table>
 						<Table name="СписокЗапросов" id="10">
-							<Representation>List</Representation>
+							<Representation>Tree</Representation>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>рфСписокЗапросов</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="СписокЗапросовКонтекстноеМеню" id="11"/>
+							<ContextMenu name="СписокЗапросовКонтекстноеМеню" id="11">
+								<ChildItems>
+									<Button name="СписокЗапросовДобавитьДочерний" id="150">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СписокЗапросовДобавитьДочерний</CommandName>
+										<ExtendedTooltip name="СписокЗапросовДобавитьДочернийРасширеннаяПодсказка" id="151"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="СписокЗапросовКоманднаяПанель" id="12">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
@@ -638,7 +650,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8:ValueTable</v8:Type>
+				<v8:Type>v8:ValueTree</v8:Type>
 			</Type>
 			<Columns>
 				<Column name="Имя" id="1">
@@ -1206,6 +1218,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьЗапросИзСтрВнут</Action>
+		</Command>
+		<Command name="СписокЗапросовДобавитьДочерний" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить дочерний</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список запросов добавить дочерний</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокЗапросовДобавитьДочерний</Action>
+		</Command>
+		<Command name="КнопкаВыбораБазы" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;Имя базы&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка выбора базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаВыбораБазы</Action>
 		</Command>
 	</Commands>
 	<Parameters>
