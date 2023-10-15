@@ -899,11 +899,23 @@
 			<c>
 				<c>
 					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2023_10_16__01_46</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжил добавлять переключение между базами.</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
