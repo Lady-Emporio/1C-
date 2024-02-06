@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Enum uuid="17230698-f77a-4853-8af5-51bc6f1ad21e">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.Перечисление2" category="Ref">
+				<xr:TypeId>ca1acdbd-035d-4902-a375-7efa386dcd11</xr:TypeId>
+				<xr:ValueId>1fd3f6ef-efee-40eb-8751-f58b18b35a89</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.Перечисление2" category="Manager">
+				<xr:TypeId>039477f4-05c1-4ed9-b967-56fa3f728aef</xr:TypeId>
+				<xr:ValueId>0c340374-6e6e-456c-a2f9-776806fd41cf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.Перечисление2" category="List">
+				<xr:TypeId>f27a0fb2-380b-482d-ad7b-5a084435403a</xr:TypeId>
+				<xr:ValueId>0954c826-bbe6-4583-aa28-353602544f3e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Перечисление2</Name>
+			<Synonym/>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="8cd8a0ff-5ce5-47c4-96bb-0ee531c6ddfe">
+				<Properties>
+					<Name>ЗначениеПеречисления1</Name>
+					<Synonym/>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3b557a57-5cab-48c5-9285-34ddae84198b">
+				<Properties>
+					<Name>ЗначениеПеречисления2</Name>
+					<Synonym/>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dfa053f8-4536-4167-8ed7-bfa8032e952d">
+				<Properties>
+					<Name>ЗначениеПеречисления3</Name>
+					<Synonym/>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="818ee3ef-7359-4ba0-99dd-da7655181320">
+				<Properties>
+					<Name>ЗначениеПеречисления4</Name>
+					<Synonym/>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cc0dde3b-af98-426a-9fbe-cb2884c43076">
+				<Properties>
+					<Name>ЗначениеПеречисления5</Name>
+					<Synonym/>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3b9e28bc-1b08-4e6c-b7f0-2cea7d6454a9">
+				<Properties>
+					<Name>ЗначениеПеречисления6</Name>
+					<Synonym/>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -47,6 +47,7 @@
 				<c>
 					<f>2</f>
 					<parameter>Ячейка</parameter>
+					<detailParameter>МояРасшифровка</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -1314,8 +1315,8 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>9</defaultFormatIndex>
-	<height>57</height>
-	<vgRows>57</vgRows>
+	<height>59</height>
+	<vgRows>59</vgRows>
 	<merge>
 		<r>15</r>
 		<c>0</c>

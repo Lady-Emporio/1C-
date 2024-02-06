@@ -926,11 +926,23 @@
 			<c>
 				<c>
 					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2023_11_13__23_59</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поправил описание типов в параметрах, так как при сохранении ТЗ с колонкой ОП все типы конфигурации записывались в файл</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -941,11 +953,23 @@
 			<c>
 				<c>
 					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2023_01_07__23_27</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправил генерации наименования в списке, если запрос заканчивается удалением вт</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -956,11 +980,23 @@
 			<c>
 				<c>
 					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2024_02_05__08_00</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавил автодополнение ввода у удаленных объектов</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -970,12 +1006,24 @@
 		<row>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2024_02_05__08_30</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавил форму анализа реквизитов метаданных. Добавил вывод типов у колонок запроса для значений перечислений.</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -1433,72 +1481,6 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>        Убедится, что понятно, как формируется запрос и какие данные откуда, какого типа.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>57</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>                Более удобный вывод данных о типах в колонках в случае разбора запроса</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>58</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
 							<v8:content>                Откуда взялась эта ВТ. ВТ3 взялась из Вт2, которая взялась из Вт1 соединенной с....</v8:content>
 						</v8:item>
 					</tl>
@@ -1517,40 +1499,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>59</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>                        Историю по образованию Вт.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>60</index>
+		<index>57</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1589,7 +1538,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>61</index>
+		<index>58</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1628,85 +1577,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>62</index>
+		<index>59</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Удаление вт - окраска в запросе</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>63</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
 			<c>
 				<c>
 					<f>21</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Удаление лишних вт - вт, которые не используются в финальном запросе</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru1</v8:lang>
-							<v8:content>2023_04_23__11_50 - удалить лишние вт - хорошая идея. Вот только их найти проблемотично - я не учитываю вт, которые в условиях ГДЕ. Только соединения. ВТ может в условиях "ГДЕ" использоваться. А это нужно анализировать.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>64</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1739,7 +1616,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>65</index>
+		<index>60</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1772,7 +1649,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>66</index>
+		<index>61</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1805,7 +1682,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>67</index>
+		<index>62</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1838,7 +1715,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>68</index>
+		<index>63</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1883,7 +1760,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>69</index>
+		<index>64</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1905,7 +1782,7 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1928,7 +1805,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>70</index>
+		<index>65</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1950,7 +1827,7 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1973,7 +1850,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>71</index>
+		<index>66</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -1995,7 +1872,7 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2018,52 +1895,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>72</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Разобраться с экраном. То таб док не виден, то текст не виден.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>23</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>2023_04_20__14_43</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>----</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>73</index>
+		<index>67</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -2091,7 +1923,7 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2114,7 +1946,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>74</index>
+		<index>68</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -2136,7 +1968,7 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2159,7 +1991,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>75</index>
+		<index>69</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -2204,7 +2036,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>76</index>
+		<index>70</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -2216,7 +2048,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2254,7 +2086,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>77</index>
+		<index>71</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -2265,7 +2097,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2303,13 +2135,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>78</index>
+		<index>72</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
 			<c>
 				<c>
-					<f>22</f>
+					<f>21</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2354,7 +2186,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>79</index>
+		<index>73</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<formatIndex>12</formatIndex>
@@ -2400,6 +2232,174 @@
 							<v8:content>В типовой запрос заполнен чем угодно. Там 20 параметров. А в самом запросе используется 1.</v8:content>
 						</v8:item>
 					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>74</index>
+		<row>
+			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
+			<formatIndex>12</formatIndex>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>сделать вывод запроса деревом. таблицей. Пакетный вывод запроса таблицами.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>75</index>
+		<row>
+			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
+			<formatIndex>12</formatIndex>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>76</index>
+		<row>
+			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
+			<formatIndex>12</formatIndex>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>77</index>
+		<row>
+			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
+			<formatIndex>12</formatIndex>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>78</index>
+		<row>
+			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
+			<formatIndex>12</formatIndex>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>79</index>
+		<row>
+			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
+			<formatIndex>12</formatIndex>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
 				</c>
 			</c>
 		</row>
@@ -2921,168 +2921,6 @@
 		<index>99</index>
 		<row>
 			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>100</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>101</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>102</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>103</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>104</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
-			<formatIndex>12</formatIndex>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>15</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>105</index>
-		<row>
-			<columnsID>810fbdd9-0ad2-425e-a32f-40f0ae93939e</columnsID>
 			<c>
 				<c>
 					<f>25</f>
@@ -3107,12 +2945,12 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>26</defaultFormatIndex>
-	<height>106</height>
+	<height>100</height>
 	<vgLevels>1</vgLevels>
-	<vgRows>106</vgRows>
+	<vgRows>100</vgRows>
 	<vg>
 		<b>47</b>
-		<e>105</e>
+		<e>99</e>
 	</vg>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ВерсииКонфигурации</name>
@@ -3215,11 +3053,6 @@
 		<textPlacement>Cut</textPlacement>
 	</format>
 	<format>
-		<font>1</font>
-		<border>0</border>
-		<textPlacement>Cut</textPlacement>
-	</format>
-	<format>
 		<font>0</font>
 		<border>0</border>
 		<width>127</width>
@@ -3228,6 +3061,11 @@
 	<format>
 		<border>0</border>
 		<width>72</width>
+		<textPlacement>Cut</textPlacement>
+	</format>
+	<format>
+		<font>1</font>
+		<border>0</border>
 		<textPlacement>Cut</textPlacement>
 	</format>
 	<format>

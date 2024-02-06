@@ -215,7 +215,18 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Catalog>Справочник1</Catalog>
+			<Document>Документ1</Document>
+			<Document>Документ2</Document>
+			<Enum>Перечисление1</Enum>
+			<Enum>Перечисление2</Enum>
 			<DataProcessor>КонсольЗапросовМоя83РабочийСтол</DataProcessor>
+			<InformationRegister>РегистрСведений1</InformationRegister>
+			<InformationRegister>РегистрСведений2</InformationRegister>
+			<InformationRegister>РегистрСведений3</InformationRegister>
+			<AccumulationRegister>РегистрНакопления1</AccumulationRegister>
+			<BusinessProcess>БизнесПроцесс1</BusinessProcess>
+			<Task>Задача1</Task>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

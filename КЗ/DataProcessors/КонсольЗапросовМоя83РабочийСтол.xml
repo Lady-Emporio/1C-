@@ -117,6 +117,8 @@
 			<Form>НастройкаОткрытияФормПриЗапуске</Form>
 			<Form>РегламентныеИФоновыеЗадания</Form>
 			<Form>РазборЗапроса</Form>
+			<Form>ФормаHTTPЗапросов</Form>
+			<Form>ФормаАнализМетаданных</Form>
 			<Template>Макет</Template>
 			<Template>СКД_ВыводТипов</Template>
 			<Template>ВерсионированиеОбработки</Template>
